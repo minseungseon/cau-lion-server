@@ -6,6 +6,7 @@ Cau programming organization, '멋쟁이 사자처럼' (aka. LikeLion) is an org
 This website is for better administration of the organization and a workspace where organization's programming history can be recorded.  
 
 ## Build Status  
+[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
 
 
 
