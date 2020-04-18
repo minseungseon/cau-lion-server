@@ -10,7 +10,7 @@ This website is for better administration of the organization and a workspace wh
 ## Build Status  
 | **Date** | **Contributor** | **Updated Contents** |
 |:----:|:-----------:|:----------------:|
-|2020-04-18|Minseung Seon|Updated Readme.md|
+|2020-04-18|Minseung Seon|Updated README.md|
 | | | |
 | | | | 
   
