@@ -11,6 +11,8 @@ This website is for better administration of the organization and a workspace wh
 | **Date** | **Contributor** | **Updated Contents** |
 |:----:|:-----------:|:----------------:|
 |2020-04-18|Minseung Seon|Updated Readme.md|
+| | | |
+| | | | 
   
   
 ## Code Style
