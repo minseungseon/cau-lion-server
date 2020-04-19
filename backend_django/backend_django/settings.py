@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#REST_FRAMEWORK 선민승 04-20 추가
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES" : ("knox.auth.TokenAuthentication",),
+}
 
 # Application definition
 
