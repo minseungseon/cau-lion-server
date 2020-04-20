@@ -4,6 +4,7 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
+from .models import Profile
 
 #Sign Up 회원가입
 class CreateUserSerializer(serializers.ModelSerializer) :
@@ -22,7 +23,8 @@ class CreateUserSerializer(serializers.ModelSerializer) :
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fileds = ("id", "username")
+        fields = ("id", "username")
+        
 
 #Login 로그인
 #연결되는 모델이 없기 때문에 serializer로 작성 
@@ -36,3 +38,10 @@ class LoginUserSerializer(serializers.Serializer):
         if user and user.is_active:
             return user
         raise serializers.ValidationError("아이디 혹은 비밀번호가 잘못 되었습니다.")
+
+class ProfileSerializer(serializers.Serializer):
+    class Meta:
+        model = Profile
+        #exclude = ("user_pk", "likelion_number", "email")
+        fields = '__all__'
+        #read_only = True
