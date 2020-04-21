@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['django-env.eba-2ue7b2ff.ap-northeast-2.elasticbeanstalk.com']
 
+#REST_FRAMEWORK 선민승 04-20 추가
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES" : ("knox.auth.TokenAuthentication",),
+}
 
 # Application definition
 
