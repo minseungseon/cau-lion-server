@@ -70,12 +70,10 @@ prompt-toolkit==2.0.9
 psycopg2-binary==2.8.2
 pycparser==2.20
 Pygments==2.4.2
-pypiwin32==223
 pyrsistent==0.15.4
 python-dateutil==2.8.0
 python3-openid==3.1.0
 pytz==2019.1
-pywin32==225
 pywinpty==0.5.5
 PyYAML==5.3.1
 pyzmq==18.1.0
