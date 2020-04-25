@@ -25,13 +25,13 @@ SECRET_KEY = '9mb)q$eamb4on4k3*7y7io%nb(5sm9!+vhjurq_y=4k(+bd)pt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#ALLOWED_HOSTS = ['caulion-env.eba-vw5ggty2.us-west-2.elasticbeanstalk.com']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['caulion-env.eba-vw5ggty2.us-west-2.elasticbeanstalk.com']
+#ALLOWED_HOSTS = []
 
 #REST_FRAMEWORK 선민승 04-20 추가
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES" : ("knox.auth.TokenAuthentication",),
-    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'#이거 swagger써줄때 꼭 써야되요!
 }
 
 # Application definition
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'login_api',
     'rest_framework',
     'knox',
-    'rest_framework_swagger',
+    'rest_framework_swagger', # api 자동문서화 swagger!
 ]
 
 MIDDLEWARE = [
