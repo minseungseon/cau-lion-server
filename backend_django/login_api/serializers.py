@@ -7,10 +7,42 @@ from django.contrib.auth import authenticate
 from .models import Profile
 
 #Sign Up 회원가입
+
+class UserSerializer(serializers.ModelSerializer):
+    class meta:
+        model = User
+        fields = ('id', 'username', 'email')
+
+        
 class CreateUserSerializer(serializers.ModelSerializer) :
+
+    # def create(self, validated_data):
+    #     username = validated_data['username']
+    #     email = validated_data['email']
+    #     password = validated_data['password']
+
+    #     user_obj = User(
+    #         username = username,
+    #         email = email
+    #     )
+
+    #     user_obj.set_password(password)
+    #     user_obj.save()
+
+    #     return validated_data
+
+    # class Meta:
+    #     model = User
+    #     fields = [
+    #         'username',
+    #         'password',
+    #         'email',
+    #         'is_superuser',
+    #     ]
+
     class Meta:
         model = User
-        fields = ("id", "username", "password")
+        fields = ("id", "username", "password", "email")
         extra_kwargs = {"password": {"write_only": True}}
 
     def create(self, validated_data):

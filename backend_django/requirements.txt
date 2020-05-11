@@ -6,3 +6,4 @@ djangorestframework==3.11.0
 pycparser==2.20
 pytz==2019.3
 six==1.14.0
+django-rest-swagger==2.2.0
