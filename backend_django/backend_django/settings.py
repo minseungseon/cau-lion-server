@@ -13,7 +13,7 @@ SECRET_KEY = '9mb)q$eamb4on4k3*7y7io%nb(5sm9!+vhjurq_y=4k(+bd)pt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['caulion-env.eba-vw5ggty2.us-west-2.elasticbeanstalk.com']
+#ALLOWED_HOSTS = ['caulion-env.eba-vw5ggty2.us-west-2.elasticbeanstalk.com']
 ALLOWED_HOSTS = ['*']
 
 #REST_FRAMEWORK 선민승 04-20 추가
@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'knox',
     'corsheaders',
+    'rest_auth',
     'rest_framework_swagger', # api 자동문서화 swagger!
 ]
 
