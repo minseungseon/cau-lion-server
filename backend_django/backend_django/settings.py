@@ -34,12 +34,8 @@ INSTALLED_APPS = [
     'login_api',
     'rest_framework',
     'knox',
-<<<<<<< HEAD
-    'rest_auth',   
-=======
     'corsheaders',
     'rest_auth',
->>>>>>> 77286c31858661dc2579e1c371f887330d94205c
     'rest_framework_swagger', # api 자동문서화 swagger!
 ]
 
