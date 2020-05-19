@@ -51,11 +51,11 @@ class CreateUserSerializer(serializers.ModelSerializer) :
         )
         return user
 
-#Check Valid Access on Server 접속 유지중인지 확인
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ("id", "username")
+# #Check Valid Access on Server 접속 유지중인지 확인
+# class UserSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = User
+#         fields = ("id", "username")
         
 
 #Login 로그인
@@ -77,3 +77,9 @@ class ProfileSerializer(serializers.Serializer):
         #exclude = ("user_pk", "likelion_number", "email")
         fields = '__all__'
         #read_only = True
+
+    def update(self, instance, validated_data):
+        instance.email = validated_data.get('email', instance.email)
+        instance.user_pk = validated_data.get('user_pk', instance.user_pk)
+        instance.likelion_number = validated_data.get('likelion_number', instance.likelion_number)
+        return instance

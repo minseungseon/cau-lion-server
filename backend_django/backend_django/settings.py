@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'login_api',
+    'homework_api',
     'rest_framework',
     'knox',
     'corsheaders',
@@ -59,7 +60,7 @@ CORS_ALLOW_CREDENTIALS = True
 #     'http://localhost:3000',
 # ]
 
-] # If this is used, then not need to use `CORS_ORIGIN_ALLOW_ALL = True`
+#] # If this is used, then not need to use `CORS_ORIGIN_ALLOW_ALL = True`
 
 ROOT_URLCONF = 'backend_django.urls'
 
@@ -131,3 +132,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
