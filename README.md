@@ -29,6 +29,14 @@ _standard_
 * Login, Logout function  
 * Portfolio display function  
 * Individual Assignment Submission function  
+* Homework_api  
+* BulletinBoard_api  
+  - posting contents func 
+  - file upload func 
+  - image upload func 
+  cf. contains different functions from homework_api: 
+* ChatterBoard_api 
+
   
 ## Contributor  
 | **Name** |**Github ID**|**Email**|
