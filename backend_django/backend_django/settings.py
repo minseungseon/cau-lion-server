@@ -21,6 +21,8 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES" : ("knox.auth.TokenAuthentication",),
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'#이거 swagger써줄때 꼭 써야되요!
 }
+#User 커스터마이즈 에러 해결을 위한 코드 추가 
+# AUTH_USER_MODEL = 'chatterboard_api.author'
 
 # Application definition
 
@@ -33,6 +35,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'login_api',
     'homework_api',
+    'bulletinboard_api', #공지사항 게시판
+    'chatterboard_api',  #수다 게시판 
     'rest_framework',
     'knox',
     'corsheaders',

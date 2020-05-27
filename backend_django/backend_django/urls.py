@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from homework_api import urls
+from chatterboard_api import urls
 from rest_framework import urls
 from django.conf import settings
 from django.conf.urls.static import static
@@ -13,6 +14,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('login_api/', include('login_api.urls')),
     path('login_api/auth', include("knox.urls")),
+    path('chatterboard/', include('chatterboard_api.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
