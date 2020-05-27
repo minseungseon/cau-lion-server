@@ -42,7 +42,7 @@ _standard_
 | **Name** |**Github ID**|**Email**|
 |:--------:|:-----------:|:-------:|
 |Minseung Seon|minseungseon|seonminseung@naver.com|
-| | | |
+|InKeun Yoo|YooInKeun|keun0390@naver.com|
 | | | |
 | | | | 
   
