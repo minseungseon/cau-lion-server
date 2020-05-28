@@ -43,8 +43,8 @@ _standard_
 |:--------:|:-----------:|:-------:|
 |Minseung Seon|minseungseon|seonminseung@naver.com|
 |InKeun Yoo|YooInKeun|keun0390@naver.com|
+|Minkyung Kang|ddongule|mnk918p@gmail.com|
 | | | |
-| | | | 
   
 ## License  
 Chungang University, LikeLion 8th 
