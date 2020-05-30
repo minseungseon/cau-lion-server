@@ -10,6 +10,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     user_pk = models.IntegerField(blank=True)
     email = models.EmailField(max_length=500, blank=True)
+    phone_number = models.IntegerField(blank=True)
     likelion_number = models.CharField(max_length = 200, blank = True)
 
     class Meta:
