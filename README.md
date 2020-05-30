@@ -29,14 +29,22 @@ _standard_
 * Login, Logout function  
 * Portfolio display function  
 * Individual Assignment Submission function  
+* Homework_api  
+* BulletinBoard_api  
+  - posting contents func 
+  - file upload func 
+  - image upload func 
+  cf. contains different functions from homework_api: 
+* ChatterBoard_api 
+
   
 ## Contributor  
 | **Name** |**Github ID**|**Email**|
 |:--------:|:-----------:|:-------:|
 |Minseung Seon|minseungseon|seonminseung@naver.com|
+|InKeun Yoo|YooInKeun|keun0390@naver.com|
+|Minkyung Kang|ddongule|mnk918p@gmail.com|
 | | | |
-| | | |
-| | | | 
   
 ## License  
 Chungang University, LikeLion 8th 
