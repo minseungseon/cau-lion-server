@@ -13,7 +13,7 @@ SECRET_KEY = '9mb)q$eamb4on4k3*7y7io%nb(5sm9!+vhjurq_y=4k(+bd)pt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['caulion-env.eba-vw5ggty2.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['127.0.0.1','caulion-env.eba-vw5ggty2.us-west-2.elasticbeanstalk.com']
 #ALLOWED_HOSTS = ['*']
 
 #REST_FRAMEWORK 선민승 04-20 추가
@@ -59,7 +59,7 @@ CORS_ALLOW_CREDENTIALS = True
 #     'http://localhost:3000',
 # ]
 
-] # If this is used, then not need to use `CORS_ORIGIN_ALLOW_ALL = True`
+#] If this is used, then not need to use `CORS_ORIGIN_ALLOW_ALL = True`
 
 ROOT_URLCONF = 'backend_django.urls'
 
