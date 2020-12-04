@@ -7,6 +7,6 @@ from django.urls import path, include
 urlpatterns = [
     #path('', get_swagger_view(title = "My API")),
     path('admin/', admin.site.urls),
-    path('login_api/', include('login_api.urls')),
-    path('login_api/auth', include("knox.urls")),
+    path('login-api/', include('login_api.urls')),
+    path('login-api/auth', include("knox.urls")),
 ]
