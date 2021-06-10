@@ -49,7 +49,7 @@ defusedxml==0.6.0
 diff-match-patch==20181111
 distributed==2.11.0
 dj-database-url==0.5.0
-Django==3.0.5
+Django==3.1.12
 django-filter==2.2.0
 django-rest-auth==0.9.5
 djangorestframework==3.11.0
